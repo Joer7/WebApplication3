@@ -8,7 +8,7 @@
 <h1>Libro Diario</h1>
 
 <p>
-    <a class="btn btn-secondary" asp-action="Create">Create New</a>
+    <a class="btn btn-secondary" asp-action="Create">Crear nuevo</a>
 </p>
 <table class="table table-striped table-dark">
     <thead>
@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.fechaVenta)
             </td>
             <td>
-                <a class="btn btn-dark" asp-action="Edit" asp-route-id="@item.idLibro">Edit</a> |
-                <a class="btn btn-dark" asp-action="Details" asp-route-id="@item.idLibro">Details</a> |
-                <a class="btn btn-dark" asp-action="Delete" asp-route-id="@item.idLibro">Delete</a>
+                <a class="btn btn-dark" asp-action="Edit" asp-route-id="@item.idLibro">Editar</a> |
+                <a class="btn btn-dark" asp-action="Details" asp-route-id="@item.idLibro">Detalles</a> |
+                <a class="btn btn-dark" asp-action="Delete" asp-route-id="@item.idLibro">Eliminar</a>
             </td>
         </tr>
 }

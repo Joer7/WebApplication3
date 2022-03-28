@@ -8,7 +8,7 @@
 <h1>Pedido</h1>
 
 <p>
-    <a class="btn btn-secondary" asp-action="Create">Create Neew</a>
+    <a class="btn btn-secondary" asp-action="Create">Crear nuevo</a>
 </p>
 <table class="table table-striped table-dark">
     <thead>
@@ -56,9 +56,9 @@
                 @Html.DisplayFor(modelItem => item.Nit)
             </td>
             <td>
-                <a class="btn btn-dark" asp-action="Edit" asp-route-id="@item.NumPedido">Edit</a> |
-                <a class="btn btn-dark" asp-action="Details" asp-route-id="@item.NumPedido">Details</a> |
-                <a class="btn btn-dark" asp-action="Delete" asp-route-id="@item.NumPedido">Delete</a>
+                <a class="btn btn-dark" asp-action="Edit" asp-route-id="@item.NumPedido">Editar</a> |
+                <a class="btn btn-dark" asp-action="Details" asp-route-id="@item.NumPedido">Detalles</a> |
+                <a class="btn btn-dark" asp-action="Delete" asp-route-id="@item.NumPedido">Eliminar</a>
             </td>
         </tr>
 }
