@@ -1,0 +1,43 @@
+﻿@model WebApplication3.Models.Libro
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Libro</h4>
+    <hr />
+    <dl class="row p-3 mb-2 bg-secondary text-white">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cantidadPago)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cantidadPago)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Egresos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Egresos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ingresos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ingresos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fechaVenta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fechaVenta)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.idLibro">Edit</a> |
+    <a class="btn btn-success" asp-action="Index">Back to List</a>
+</div>

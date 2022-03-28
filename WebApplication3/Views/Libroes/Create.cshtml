@@ -1,0 +1,46 @@
+﻿@model WebApplication3.Models.Libro
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Libro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="cantidadPago" class="control-label"></label>
+                <input asp-for="cantidadPago" class="form-control alert alert-primary" />
+                <span asp-validation-for="cantidadPago" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Egresos" class="control-label"></label>
+                <input asp-for="Egresos" class="form-control alert alert-primary" />
+                <span asp-validation-for="Egresos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ingresos" class="control-label"></label>
+                <input asp-for="Ingresos" class="form-control alert alert-primary" />
+                <span asp-validation-for="Ingresos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaVenta" class="control-label"></label>
+                <input asp-for="fechaVenta" class="form-control alert alert-primary" />
+                <span asp-validation-for="fechaVenta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">Back to List</a>
+</div>
+

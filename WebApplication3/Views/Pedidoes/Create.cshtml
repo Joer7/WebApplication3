@@ -1,0 +1,56 @@
+﻿@model WebApplication3.Models.Pedido
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Pedido</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control alert alert-primary" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="codPlato" class="control-label"></label>
+                <input asp-for="codPlato" class="form-control alert alert-primary" />
+                <span asp-validation-for="codPlato" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="codCliente" class="control-label"></label>
+                <input asp-for="codCliente" class="form-control alert alert-primary" />
+                <span asp-validation-for="codCliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cantidad" class="control-label"></label>
+                <input asp-for="cantidad" class="form-control alert alert-primary" />
+                <span asp-validation-for="cantidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fecha" class="control-label"></label>
+                <input asp-for="fecha" class="form-control alert alert-primary" />
+                <span asp-validation-for="fecha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nit" class="control-label"></label>
+                <input asp-for="Nit" class="form-control alert alert-primary" />
+                <span asp-validation-for="Nit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,31 @@
+﻿@model WebApplication3.Models.Producto
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="row p-3 mb-2 bg-secondary text-white">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NamePlato)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NamePlato)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.precio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.precio)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Cod_Plato">Editar</a> |
+    <a class="btn btn-success" asp-action="Index">Volver a la Lista</a>
+</div>
